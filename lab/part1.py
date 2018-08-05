@@ -1,13 +1,18 @@
 # Part 1 of the Python Review lab.
 
 def hello_world():
-	pass
+	print("hello_world")
 
 def greet_by_name(name):
-	pass
+	print("hello ", name)
 
 def encode(x):
-	pass
+	num=x*3953531
+	return(num)
 
 def decode(coded_message):
-	pass
+	i = coded_message/3953531
+	return(i)
+
+##x = 89
+##print(decode(encode(x)))
