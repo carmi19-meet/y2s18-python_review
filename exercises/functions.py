@@ -6,6 +6,7 @@ def is_prime(x):
 	while i>1:
 		if x%i==0:
 			prime=False
+			break
 		i-=1
 	return (prime)
 ##print(is_prime(5191))
@@ -13,9 +14,9 @@ def is_prime(x):
 def b_prime():
 	i=5
 	b=0
-	if is_prime(i):
-		b=i
 	while b<1000000:
 		i+=1
-	return (b)
+		if is_prime(i):
+			b=i
+			print(b)
 b_prime()
